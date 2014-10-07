@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugins>
+  <cachechk>201407141736</cachechk>
+  <item>
+    <name>asdfg</name>
+    <internalName>asdfg</internalName>
+    <category>QNAP Select</category>
+    <type>Entertainment</type>
+    <icon80>http://download/Photo_Station_80.png</icon80>
+    <description><![CDATA[I am description.]]></description>
+    <fwVersion>4.1.0</fwVersion>
+    <version>4.1</version>
+    <platform>
+      <platformID>TS-NASX86</platformID>
+      <location>http://download/PhotoStation_4.1_20140612_all.zip</location>
+    </platform>
+    <platform>
+      <platformID>TS-NASARM</platformID>
+      <location>http://download/PhotoStation_4.1_20140612_all.zip</location>
+    </platform>
+    <publishedDate>2014/06/12</publishedDate>
+    <maintainer><![CDATA[ATTL]]></maintainer>
+    <developer><![CDATA[ATTL]]></developer>
+    <developerLink>http://dev</developerLink>
+     <wikiLink><![CDATA[http://wiki]]></wikiLink>
+    <forumLink><![CDATA[http://forum]]></forumLink>
+    <icon100>http://download/photostation_100.png</icon100>
+		<language><![CDATA[English, 繁體中文, Czech, Dansk, Deutsch]]></language>
+	  <snapshot>http://download/photostation_640x400.png</snapshot>
+</item>
+  <item>
+    <name>get</name>
+    <internalName>get</internalName>
+    <category>QNAP Select</category>
+    <type>Entertainment</type>
+    <icon80>http://download/Photo_Station_80.png</icon80>
+    <description><![CDATA[I am description.]]></description>
+    <fwVersion>4.1.0</fwVersion>
+    <version>4.1</version>
+    <platform>
+      <platformID>TS-NASX86</platformID>
+      <location>http://download/PhotoStation_4.1_20140612_all.zip</location>
+    </platform>
+    <platform>
+      <platformID>TS-NASARM</platformID>
+      <location>http://download/PhotoStation_4.1_20140612_all.zip</location>
+    </platform>
+    <publishedDate>2014/06/12</publishedDate>
+    <maintainer><![CDATA[ATTL]]></maintainer>
+    <developer><![CDATA[ATTL]]></developer>
+    <forumLink><![CDATA[http://forum]]></forumLink>
+    <icon100>http://download/photostation_100.png</icon100>
+		<language><![CDATA[English, 繁體中文, Czech, Dansk, Deutsch]]></language>
+	  <snapshot>http://download/photostation_640x400.png</snapshot>
+	  <snapshotSmall>http://download/MediaWiki_184x115.png</snapshotSmall>
+</item>
+</plugins>

@@ -1,0 +1,32 @@
+Special Cases
+==============
+
+(1)
+由於XML檔不同，同一隻app的一個資料庫欄位可能被不同XML檔重複修改，欄位的資料不固定。
+
+* System info: [snapshot][file: 3][app: 458][ok] Do UPDATE at 'qpkg_item_snapshot' table 'ID: 420' row. Change (Img_Name) field from (CCIS_640x400_cn.png) to (CCIS_640x400_cht.png).
+* System info: [snapshot][file: 2][app: 458][ok] Do UPDATE at 'qpkg_item_snapshot' table 'ID: 420' row. Change (Img_Name) field from (CCIS_640x400_cht.png) to (CCIS_640x400_cn.png).
+
+
+(2)
+tutorialLink部份
+app id: 298: 檔案的名稱"Surveillance_Station_User_Manual_V5.0.0_ENG_20140522.pdf"大於資料庫字串長度上限(50)，造成資料錯誤。這問題可能需要對資料庫的欄位資料型態進行設定。
+
+* System info: [developer][file: 23][app: 418][ok] Do UPDATE at 'qpkg_item' table 'ID: 418' row. Change (Developer) field from (Webalizer - webalizer.org) to (Webalizer este un program gratuit şi open source de analiză a fişierelor jurnal generate de serverele web. Programul produce rapoarte de utilizare foarte detaliate şi uşor de configurat, în format HTML (pentru vizualizarea într-un browser web standard).).
+
+
+(3)
+platform部份
+app id: 396: 資料庫的qpkg_item_platform表的欄位資料無法使用程式分辨差別，請手動修改。
+程式部份在processDb.php的do_platform function 程式碼有將此app略過，請依情況將之註解掉
+* System info: [platform][file: 3][app: 396][error] Pass platform tag of Virtualization Station!!!
+
+
+(4)
+HD Station部份因資料庫的資料不足以使用程式分辨，只能使用手動修改。在processData.php的travelTag function有加條件跳過。
+
+
+
+(5)
+DB的qpkg_item_platform表有兩筆資料，"Type"等於2，程式沒有處理這兩筆資料。
+ID = 520 and 530

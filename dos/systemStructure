@@ -1,0 +1,33 @@
+System Structure
+================
+
+  ./
+  |-- index.php
+  |-- output.php
+  |-- uploadFile.php
+  |-- processData.php
+  |-- processDb.php
+  |-- processXml.php
+  |-- dos
+  |   |-- specialCase
+  |   |-- systemStructure
+  |-- xmlFolder
+      |-- qpkgcenter_*.xml
+
+
+index.php:
+	系統操作介面
+output.php:
+	輸出字串的包裝
+uploadFile.php:
+	上傳xml檔的程式碼，預設的上傳位置為xmlFolder。如果上傳失敗請設定資料夾的權限。
+processData.php:
+	主程式
+processDb.php:
+	與DB操作相關的函式
+processXml.php:
+	與xml檔操作相關的函式
+dos:
+	說明檔
+xmlFolder:
+	xml檔的路徑
